@@ -3,6 +3,26 @@ entries:
   xrchat:
   - apiVersion: v2
     appVersion: 0.0.3
+    created: "2020-04-29T13:26:30.075225796+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: 2d8ffd197576c717f6c1a5ec60249c21b70119694d729fc06ade4b13d555af6e
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xrchat
+    type: application
+    urls:
+    - https://xrchat.github.io/xrchat-ops/xrchat-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    appVersion: 0.0.3
     created: "2020-04-22T20:41:21.770266075+02:00"
     dependencies:
     - condition: mariadb.enabled
@@ -101,4 +121,4 @@ entries:
     urls:
     - https://xrchat.github.io/xrchat-ops/xrchat-0.1.0.tgz
     version: 0.1.0
-generated: "2020-04-22T20:41:21.765035128+02:00"
+generated: "2020-04-29T13:26:30.0602164+02:00"
