@@ -1,7 +1,7 @@
 title: Our xrchat Helm chart repo
 description: A chart repo for storing charts.
 theme: minima
-url: "https://xrchat.github.io/xrchat-ops/"
+url: "https://xr3ngine.github.io/xrchat-ops/"
 repo_name: xrchat
 
 exclude:
