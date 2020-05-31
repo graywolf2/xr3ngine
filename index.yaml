@@ -3,6 +3,126 @@ entries:
   xrchat:
   - apiVersion: v2
     appVersion: 0.0.3
+    created: "2020-05-28T15:18:30.294051149+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: 8d303a834904e2f609bda62e78edd66c17e95e1c355bc215afee94b28dac252f
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xrchat
+    type: application
+    urls:
+    - https://xrchat.github.io/xrchat-ops/xrchat-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-05-03T14:47:33.161899497+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: b1f8072bf3164137b52d71bd72c7935bf043c5d13e19c612a135604dc814af2d
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xrchat
+    type: application
+    urls:
+    - https://xrchat.github.io/xrchat-ops/xrchat-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-04-22T20:41:21.770266075+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: a6225d92fe8b320158e9ed53114bcf0e11ad3bb042bfcb880fa5ed2e6424c2f5
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xrchat
+    type: application
+    urls:
+    - https://xrchat.github.io/xrchat-ops/xrchat-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-04-19T18:26:25.708719573+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: 4a2e78d74e8d410b493328f320a1c49a6e70e5212b1b4e73018a6991ae981ee7
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xrchat
+    type: application
+    urls:
+    - https://xrchat.github.io/xrchat-ops/xrchat-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-04-17T15:35:06.789536858+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: 20296816e52f7bb994b936db34f1b16cfb4dfec2ec3e852c8141ba5b4afda887
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xrchat
+    type: application
+    urls:
+    - https://xrchat.github.io/xrchat-ops/xrchat-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-04-15T20:51:33.173920146+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: bf54a94bcd753d6afb9f48bb78eb748e999dfe9e5662202091b60a6a21275336
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xrchat
+    type: application
+    urls:
+    - https://xrchat.github.io/xrchat-ops/xrchat-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.0.3
     created: "2020-04-15T18:09:30.85464108+02:00"
     dependencies:
     - condition: mariadb.enabled
@@ -21,4 +141,4 @@ entries:
     urls:
     - https://xrchat.github.io/xrchat-ops/xrchat-0.1.0.tgz
     version: 0.1.0
-generated: "2020-04-15T18:09:30.849851636+02:00"
+generated: "2020-05-28T15:18:30.281677947+02:00"
