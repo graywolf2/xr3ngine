@@ -1,5 +1,26 @@
 apiVersion: v1
 entries:
+  xr3ngine:
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-05-31T11:52:37.157999363+02:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.3.16
+    - condition: agones.enabled
+      name: agones
+      repository: https://agones.dev/chart/stable
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: a729f0a53749d3080108967e26c61f1cf4764576c16d521be20243a72ea196c5
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xr3ngine
+    type: application
+    urls:
+    - https://xr3ngine.github.io/xrsocial-ops/xr3ngine-0.9.0.tgz
+    version: 0.9.0
   xrchat:
   - apiVersion: v2
     appVersion: 0.0.3
@@ -141,4 +162,4 @@ entries:
     urls:
     - https://xr3ngine.github.io/xrsocial-ops/xrchat-0.1.0.tgz
     version: 0.1.0
-generated: "2020-05-28T15:18:30.281677947+02:00"
+generated: "2020-05-31T11:52:37.151939586+02:00"
