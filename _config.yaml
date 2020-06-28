@@ -1,7 +1,7 @@
 title: Our XR3ngine Helm chart repo
 description: A chart repo for storing charts.
 theme: minima
-url: "https://xr3ngine.github.io/xrsocial-ops/"
+url: "https://social.xrengine.io"
 repo_name: xr3ngine
 
 exclude:
