@@ -3,7 +3,7 @@ entries:
   xr3ngine:
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2020-07-15T16:32:10.032009651-07:00"
+    created: "2020-07-15T17:13:08.935962909-07:00"
     dependencies:
       - condition: mariadb.enabled
         name: mariadb
@@ -14,7 +14,7 @@ entries:
         repository: https://agones.dev/chart/stable
         version: 1.4.0
     description: A Helm chart for Kubernetes
-    digest: 416c830eece84b6a4699b1a13df9b1bd4e821c403f5d8d2cdec32bc91beaf528
+    digest: a3deb73abb4b4e3e1b3296bbddd3bf847bb7b8e5d2f9aa519e8860815ad203b5
     icon: https://avatars3.githubusercontent.com/u/61642798
     name: xr3ngine
     type: application
@@ -282,4 +282,4 @@ entries:
     urls:
     - https://school.xrengine.io/xrchat-0.1.0.tgz
     version: 0.1.0
-generated: "2020-07-15T16:32:10.026133969-07:00"
+generated: "2020-07-15T17:13:08.930920841-07:00"
