@@ -19,7 +19,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine/xr3ngine-2.0.0.tgz
+      - https://school.xrengine.io/xr3ngine-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
     appVersion: 0.0.3
