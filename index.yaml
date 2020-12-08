@@ -3,6 +3,26 @@ entries:
   xr3ngine:
   - apiVersion: v2
     appVersion: 0.0.3
+    created: "2020-12-08T14:02:54.041338526-08:00"
+    dependencies:
+      - condition: mariadb.enabled
+        name: mariadb
+        repository: https://charts.bitnami.com/bitnami
+        version: 7.3.16
+      - condition: redis.enabled
+        name: redis
+        repository: https://charts.bitnami.com/bitnami
+        version: 10.7.13
+    description: A Helm chart for Kubernetes
+    digest: 8ed31fb6a0a1a9f909f1a83bf9b8de1cae431106a64146fe78235d743d604102
+    icon: https://avatars3.githubusercontent.com/u/61642798
+    name: xr3ngine
+    type: application
+    urls:
+      - https://school.xrengine.io/xr3ngine-2.2.1.tgz
+    version: 2.2.1
+  - apiVersion: v2
+    appVersion: 0.0.3
     created: "2020-11-30T17:55:40.588572203-08:00"
     dependencies:
       - condition: mariadb.enabled
@@ -446,4 +466,4 @@ entries:
     urls:
     - https://school.xrengine.io/xrchat-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-30T17:55:40.576231343-08:00"
+generated: "2020-12-08T14:02:54.033400548-08:00"
