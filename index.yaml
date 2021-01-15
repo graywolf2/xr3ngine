@@ -19,7 +19,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.2.3.tgz
+      - https://helm.xrengine.io/xr3ngine-2.2.3.tgz
     version: 2.2.3
   - apiVersion: v2
     appVersion: 0.0.3
@@ -39,7 +39,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.2.2.tgz
+      - https://helm.xrengine.io/xr3ngine-2.2.2.tgz
     version: 2.2.2
   - apiVersion: v2
     appVersion: 0.0.3
@@ -59,7 +59,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.2.1.tgz
+      - https://helm.xrengine.io/xr3ngine-2.2.1.tgz
     version: 2.2.1
   - apiVersion: v2
     appVersion: 0.0.3
@@ -79,7 +79,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.2.0.tgz
+      - https://helm.xrengine.io/xr3ngine-2.2.0.tgz
     version: 2.2.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -99,7 +99,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.1.3.tgz
+      - https://helm.xrengine.io/xr3ngine-2.1.3.tgz
     version: 2.1.3
   - apiVersion: v2
     appVersion: 0.0.3
@@ -119,7 +119,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.1.2.tgz
+      - https://helm.xrengine.io/xr3ngine-2.1.2.tgz
     version: 2.1.2
   - apiVersion: v2
     appVersion: 0.0.3
@@ -139,7 +139,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.1.1.tgz
+      - https://helm.xrengine.io/xr3ngine-2.1.1.tgz
     version: 2.1.1
   - apiVersion: v2
     appVersion: 0.0.3
@@ -159,7 +159,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.1.0.tgz
+      - https://helm.xrengine.io/xr3ngine-2.1.0.tgz
     version: 2.1.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -179,7 +179,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.0.1.tgz
+      - https://helm.xrengine.io/xr3ngine-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
     appVersion: 0.0.3
@@ -199,7 +199,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-2.0.0.tgz
+      - https://helm.xrengine.io/xr3ngine-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -223,7 +223,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-1.2.0.tgz
+      - https://helm.xrengine.io/xr3ngine-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -243,7 +243,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-1.1.5.tgz
+      - https://helm.xrengine.io/xr3ngine-1.1.5.tgz
     version: 1.1.5
   - apiVersion: v2
     appVersion: 0.0.3
@@ -263,7 +263,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-1.1.4.tgz
+      - https://helm.xrengine.io/xr3ngine-1.1.4.tgz
     version: 1.1.4
   - apiVersion: v2
     appVersion: 0.0.3
@@ -283,7 +283,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-1.1.3.tgz
+      - https://helm.xrengine.io/xr3ngine-1.1.3.tgz
     version: 1.1.3
   - apiVersion: v2
     appVersion: 0.0.3
@@ -303,7 +303,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-1.1.2.tgz
+      - https://helm.xrengine.io/xr3ngine-1.1.2.tgz
     version: 1.1.2
   - apiVersion: v2
     appVersion: 0.0.3
@@ -323,7 +323,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-      - https://school.xrengine.io/xr3ngine-1.1.1.tgz
+      - https://helm.xrengine.io/xr3ngine-1.1.1.tgz
     version: 1.1.1
   - apiVersion: v2
     appVersion: 0.0.3
@@ -343,7 +343,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-    - https://school.xrengine.io/xr3ngine-1.0.0.tgz
+    - https://helm.xrengine.io/xr3ngine-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -363,7 +363,7 @@ entries:
     name: xr3ngine
     type: application
     urls:
-    - https://school.xrengine.io/xr3ngine-0.9.0.tgz
+    - https://helm.xrengine.io/xr3ngine-0.9.0.tgz
     version: 0.9.0
   xrchat:
   - apiVersion: v2
@@ -384,7 +384,7 @@ entries:
     name: xrchat
     type: application
     urls:
-    - https://school.xrengine.io/xrchat-0.8.0.tgz
+    - https://helm.xrengine.io/xrchat-0.8.0.tgz
     version: 0.8.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -404,7 +404,7 @@ entries:
     name: xrchat
     type: application
     urls:
-    - https://school.xrengine.io/xrchat-0.7.0.tgz
+    - https://helm.xrengine.io/xrchat-0.7.0.tgz
     version: 0.7.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -424,7 +424,7 @@ entries:
     name: xrchat
     type: application
     urls:
-    - https://school.xrengine.io/xrchat-0.5.0.tgz
+    - https://helm.xrengine.io/xrchat-0.5.0.tgz
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -444,7 +444,7 @@ entries:
     name: xrchat
     type: application
     urls:
-    - https://school.xrengine.io/xrchat-0.4.0.tgz
+    - https://helm.xrengine.io/xrchat-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -464,7 +464,7 @@ entries:
     name: xrchat
     type: application
     urls:
-    - https://school.xrengine.io/xrchat-0.3.0.tgz
+    - https://helm.xrengine.io/xrchat-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -484,7 +484,7 @@ entries:
     name: xrchat
     type: application
     urls:
-    - https://school.xrengine.io/xrchat-0.2.0.tgz
+    - https://helm.xrengine.io/xrchat-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.0.3
@@ -504,6 +504,6 @@ entries:
     name: xrchat
     type: application
     urls:
-    - https://school.xrengine.io/xrchat-0.1.0.tgz
+    - https://helm.xrengine.io/xrchat-0.1.0.tgz
     version: 0.1.0
 generated: "2020-12-14T16:45:16.114323853-08:00"
