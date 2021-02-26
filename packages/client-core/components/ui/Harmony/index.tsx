@@ -286,7 +286,7 @@ const Harmony = observer((props: Props): any => {
 
     const instanceLayerUsers = userState.get('layerUsers') ?? [];
     const channelLayerUsers = userState.get('channelLayerUsers') ?? [];
-    const layerUsers = activeAVChannelId?.length > 0 ? channelLayerUsers : instanceLayerUsers;
+    const layerUsers = channels.get(activeAVChannelId)?.channelType === 'instance' ? instanceLayerUsers : channelLayerUsers;
     const friendSubState = friendState.get('friends');
     const friends = friendSubState.get('friends');
     const groupSubState = groupState.get('groups');
@@ -336,9 +336,7 @@ const Harmony = observer((props: Props): any => {
             if ((Network.instance.transport as any).channelType === 'instance') {
                 const channelEntries = [...channels.entries()];
                 const instanceChannel = channelEntries.find((entry) => entry[1].instanceId != null);
-                if (instanceChannel != null && channelAwaitingProvision?.id?.length === 0) {
-                    setActiveAVChannelId(instanceChannel[0]);
-                }
+                if (instanceChannel != null && (MediaStreamSystem.instance.camAudioProducer != null || MediaStreamSystem.instance.camVideoProducer != null)) setActiveAVChannelId(instanceChannel[0]);
             } else {
                 setActiveAVChannelId((Network.instance.transport as any).channelId);
             }
@@ -531,6 +529,7 @@ const Harmony = observer((props: Props): any => {
         }
     };
     const handleMicClick = async (e: any) => {
+        console.log('handleMicClick');
         e.stopPropagation();
         const audioPaused = MediaStreamSystem.instance?.toggleAudioPaused();
         if (audioPaused === true) await pauseProducer(MediaStreamSystem.instance?.camAudioProducer);
@@ -538,6 +537,7 @@ const Harmony = observer((props: Props): any => {
     };
 
     const handleCamClick = async (e: any) => {
+        console.log('handleCamClick');
         e.stopPropagation();
         const videoPaused = MediaStreamSystem.instance?.toggleVideoPaused();
         if (videoPaused === true) await pauseProducer(MediaStreamSystem.instance?.camVideoProducer);
@@ -567,6 +567,7 @@ const Harmony = observer((props: Props): any => {
     }
 
     const toggleAudio = async(channelId) => {
+        console.log('toggleAudio');
         await checkMediaStream('channel', channelId);
 
         if (MediaStreamSystem.instance?.camAudioProducer == null) await createCamAudioProducer('channel', channelId);
@@ -578,6 +579,7 @@ const Harmony = observer((props: Props): any => {
     };
 
     const toggleVideo = async(channelId) => {
+        console.log('toggleVideo');
         await checkMediaStream('channel', channelId);
         if (MediaStreamSystem.instance?.camVideoProducer == null) await createCamVideoProducer('channel', channelId);
         else {
@@ -656,7 +658,11 @@ const Harmony = observer((props: Props): any => {
 
     function getChannelName(): string {
         const channel = channels.get(activeAVChannelId);
-        return channel && channel.channelType !== 'instance' ? channel[channel.channelType].name : 'Current Layer';
+        if (channel && channel.channelType !== 'instance') {
+            if (channel.channelType === 'group') return channel[channel.channelType].name;
+            if (channel.channelType === 'party') return 'Current party';
+            if (channel.channelType === 'user') return channel.user1.id === selfUser.id ? channel.user2.name : channel.user1.name;
+        } else return 'Current Layer';
     }
 
     function calcWidth(): 12 | 6 | 4 | 3 {
@@ -701,10 +707,6 @@ const Harmony = observer((props: Props): any => {
             channelType === 'group' ? channelEntries.find((entry) => entry[1].groupId === targetObjectId) :
                 channelType === 'friend' ? channelEntries.find((entry) => (entry[1].userId1 === targetObjectId || entry[1].userId2 === targetObjectId)) :
                     channelEntries.find((entry) => entry[1].partyId === targetObjectId);
-        console.log('ActiveAV match:');
-        console.log(channelMatch);
-        console.log(activeAVChannelId);
-        console.log(channelMatch != null && channelMatch[0] === activeAVChannelId);
         return channelMatch != null && channelMatch[0] === activeAVChannelId;
     }
 
@@ -979,7 +981,9 @@ const Harmony = observer((props: Props): any => {
                             />
                         </Grid>
                         { layerUsers.filter(user => user.id !== selfUser.id).map((user) => (
-                            <Grid item className={
+                            <Grid item
+                                  key={user.id}
+                                  className={
                                 classNames({
                                     [styles['grid-item']]: true,
                                     [styles.single]: layerUsers.length === 1,
