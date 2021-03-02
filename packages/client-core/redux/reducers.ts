@@ -19,6 +19,7 @@ import userReducer from './user/reducers';
 import locationReducer from './location/reducers';
 import feedReducer from './feed/reducers';
 import mediastreamReducer from './mediastream/reducers';
+import transportReducer from './transport/reducers';
 
 export default combineReducers({
   admin: adminReducer,
@@ -40,4 +41,5 @@ export default combineReducers({
   user: userReducer,
   feeds: feedReducer,
   mediastream: mediastreamReducer,
+  transport: transportReducer
 });
